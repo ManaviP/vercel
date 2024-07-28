@@ -36,7 +36,7 @@ function App() {
             <p>A brief description of the recipe.</p>
             <a href="#">View Recipe</a>
           </div>
-          {/* Add more recipe cards as needed */}
+          {/* Add more recipe cards as  */}
         </section>
       </main>
       <SuprSendInbox
