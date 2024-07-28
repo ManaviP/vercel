@@ -1,4 +1,3 @@
-// src/App.js
 import React from 'react';
 import SuprSendInbox from '@suprsend/react-inbox';
 import 'react-toastify/dist/ReactToastify.css';
@@ -41,9 +40,9 @@ function App() {
         </section>
       </main>
       <SuprSendInbox
-        workspaceKey="<workspace_key>"
-        subscriberId="<subscriber_id>"
-        distinctId="<distinct_id>"
+        workspaceKey={process.env.REACT_APP_SUPRSEND_WORKSPACE_KEY}
+        subscriberId={process.env.REACT_APP_SUPRSEND_SUBSCRIBER_ID}
+        distinctId={process.env.REACT_APP_SUPRSEND_DISTINCT_ID}
       />
       <footer>
         <p>&copy; 2024 Recipe Website. All rights reserved.</p>
